@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.5'
 
 gem 'rails', '4.1.6'
+gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'bootstrap-sass','~> 3.3.1'
 gem 'uglifier', '>= 1.3.0'
@@ -20,5 +21,5 @@ end
 
 group :production do
     gem  'pg'
-    gem 'rails_l2factor'
+    gem 'rails_12factor'
 end
