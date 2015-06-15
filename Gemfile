@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.1.4'
 
 gem 'rails', '4.1.6'
 gem 'sqlite3'
@@ -12,3 +13,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
+
+group :development, :test do
+    gem 'sqlite3'
+    gem 'pry'
+end
+
+group :production do
+    gem  'pg'
+    gem 'rails_l2factor'
+end
