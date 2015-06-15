@@ -1,39 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>www.kaamwale.com</title>
+  <title>www.gharkakaam.com</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<header class="navbar navbar-default">
-    <div class="container-fluid">
-        <%= link_to "kaamwale.com", "#", class: "logo", id: "logo" %>
-        
-        <div class="nav_item">
-        <%= link_to "About Us", "#", class: "about_us", id: "about_us" %>
-        <%= link_to "Contact Us", "#", class: "contact_us", id: "contact_us" %>
-        <%= link_to "Sign In", "#", class: "sign_in", id: "sign_in" %>
-        </div>
-    </div>
-</header>
+<%= render 'layouts/navigation' %>
+
 <%= yield %>
 
-<footer class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container-fluid">
-        <div class="footer_item_left">
-            © Copyright 2015, www.kaamwale.com. All Rights Reserved. 
-        </div>
-        
-        <div class="nav_item">
-        <%= link_to "Membership Agreement", "#", class: "footer_item_right", id: "membership_agreement" %>
-        <%= link_to "Terms of Use", "#", class: "footer_item_right", id: "terms_conditions" %>
-        <%= link_to "Privacy Policy", "#", class: "footer_item_right", id: "privacy_policy" %>
-        </div>
-  </div>
-</nav>
-</footer>
+<%= render 'layouts/footer' %>
+
 </body>
 </html>
